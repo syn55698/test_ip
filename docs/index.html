@@ -10,7 +10,10 @@
                   url:"http://synfhrol.ml/tt/" ,
                   success:function(msg){
                         alert("success\n\n"+msg);
-                    }  
+                    } ,
+                   error:function(jQxhr){
+                        alert("success\n\n"+JSON.stringify(jQxhr));
+                   }
                           
                 });              
            )
