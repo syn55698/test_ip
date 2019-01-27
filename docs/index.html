@@ -2,10 +2,25 @@
     <haed>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">    
+    
+        <script>
+           $("#go").click(function(){}
+           
+                $.ajax({
+                  url:"http://synfhrol.ml/tt/" ,
+                  success:function(msg){
+                        alert("success\n\n"+msg);
+                    }  
+                          
+                });              
+           )
+        </script>
     </head>
     <body>
 
         <h1>載入 http://synfhrol.ml/tt/ </h1>
         <iframe src="http://synfhrol.ml/tt/" style="width:800px;height:500px;border:5px #FFAC55 solid"></iframe>
+        <br>
+        <button id="go">發動 Ajax 請求 </button>
     </body>
 </html>
